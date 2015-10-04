@@ -182,6 +182,25 @@
                       var u_phone = gameScore.get("user_phone");
                       var no_pass = gameScore.get("no_passenger");
                       var num = parseInt(no_pass);
+					  
+					  
+                          if(num<10)
+                      {
+                      document.getElementById("dyn_no").innerHTML = "Dynamic Pricing : " + " " + "40rs";
+                      }
+                      
+                      if(num>=10 && num<= 20)
+                      {
+                      document.getElementById("dyn_no").innerHTML = "Dynamic Pricing : " + " " + "60rs";
+                      }
+                      
+                      if(num>20)
+                      {
+                      document.getElementById("dyn_no").innerHTML = "Dynamic Pricing : " + " " + "80rs";
+                      }
+
+					  
+					  
                      // alert("hi");
                       
                       document.getElementById("cus").innerHTML = "Driver Name-  " + " " + u_name;
@@ -263,21 +282,6 @@
 
 
 
-
-                          if(num<10)
-                      {
-                      document.getElementById("dyn_no").innerHTML = "Dynamic Pricing : " + " " + "40rs";
-                      }
-                      
-                      if(num>=10 && num<= 20)
-                      {
-                      document.getElementById("dyn_no").innerHTML = "Dynamic Pricing : " + " " + "60rs";
-                      }
-                      
-                      if(num>20)
-                      {
-                      document.getElementById("dyn_no").innerHTML = "Dynamic Pricing : " + " " + "80rs";
-                      }
 
 
 
